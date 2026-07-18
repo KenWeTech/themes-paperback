@@ -29,7 +29,7 @@ jobs:
           done
 
           # Generate a JSON array of all themes for the frontend to digest
-          find site -type f -name "*.pbcolors" | sed 's|^site/||' | jq -R -s -c '
+          find site -type f -name "*.pbcolors" | sort | sed 's|^site/||' | jq -R -s -c '
             split("\n")[:-1] | map({
               path: .,
               filename: (split("/") | last),
@@ -205,11 +205,12 @@ jobs:
                   const res = await fetch('themes.json');
                   const files = await res.json();
 
-                  // Group files by their parent folder
+                  // Group files by their parent folder and replace underscores
                   const folders = {};
                   files.forEach(file => {
-                    if(!folders[file.folder]) folders[file.folder] = [];
-                    folders[file.folder].push(file);
+                    const cleanFolder = file.folder.replace(/_/g, ' ');
+                    if(!folders[cleanFolder]) folders[cleanFolder] = [];
+                    folders[cleanFolder].push(file);
                   });
 
                   const container = document.getElementById('themes-container');
@@ -220,7 +221,10 @@ jobs:
                     const term = filter.toLowerCase();
                     let hasResults = false;
 
-                    for (const [folder, items] of Object.entries(folders)) {
+                    const sortedFolderNames = Object.keys(folders).sort();
+
+                    for (const folder of sortedFolderNames) {
+                      const items = folders[folder];
                       const folderMatch = folder.toLowerCase().includes(term);
                       const matchingItems = items.filter(i => i.filename.toLowerCase().includes(term));
 
