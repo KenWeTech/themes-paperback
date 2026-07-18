@@ -165,11 +165,12 @@
         const res = await fetch('themes.json');
         const files = await res.json();
 
-        // Group files by their parent folder
+        // Group files by their parent folder and replace underscores
         const folders = {};
         files.forEach(file => {
-          if(!folders[file.folder]) folders[file.folder] = [];
-          folders[file.folder].push(file);
+          const cleanFolder = file.folder.replace(/_/g, ' ');
+          if(!folders[cleanFolder]) folders[cleanFolder] = [];
+          folders[cleanFolder].push(file);
         });
 
         const container = document.getElementById('themes-container');
@@ -180,7 +181,10 @@
           const term = filter.toLowerCase();
           let hasResults = false;
 
-          for (const [folder, items] of Object.entries(folders)) {
+          const sortedFolderNames = Object.keys(folders).sort();
+
+          for (const folder of sortedFolderNames) {
+            const items = folders[folder];
             const folderMatch = folder.toLowerCase().includes(term);
             const matchingItems = items.filter(i => i.filename.toLowerCase().includes(term));
 
