@@ -1,0 +1,140 @@
+name: Deploy Paperback Themes Pages
+
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v4
+
+      - name: Build Pages site
+        run: |
+          rm -rf site
+          mkdir site
+
+          # Copy only theme files while preserving folder structure
+          rsync -av \
+            --include="*/" \
+            --include="*.pbcolors" \
+            --exclude="*" \
+            ./ site/
+
+          cat > site/index.html <<'EOF'
+          <!DOCTYPE html>
+          <html lang="en">
+          <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>KenWeTech's Paperback Themes</title>
+
+            <style>
+              body {
+                background: #111;
+                color: #eee;
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+                max-width: 1000px;
+                margin: auto;
+                padding: 30px;
+              }
+
+              h1 {
+                margin-bottom: 5px;
+              }
+
+              .info {
+                background: #1b1b1b;
+                border-radius: 12px;
+                padding: 20px;
+                margin-bottom: 25px;
+              }
+
+              .theme {
+                background: #1b1b1b;
+                border-radius: 12px;
+                padding: 15px;
+                margin: 15px 0;
+              }
+
+              a {
+                color: #58a6ff;
+                text-decoration: none;
+              }
+
+              a:hover {
+                text-decoration: underline;
+              }
+
+              li {
+                margin: 8px 0;
+              }
+            </style>
+          </head>
+
+          <body>
+
+            <h1>Paperback Themes</h1>
+
+            <div class="info">
+              <p>
+                Themes are organized by color or theme name.
+                Each theme folder contains available variants.
+              </p>
+
+              <ul>
+                <li>
+                  Standard version:
+                  <code>[Theme-Name]-Paperback.pbcolors</code>
+                </li>
+
+                <li>
+                  BDM:
+                  <code>[Theme-Name]-BDM-Paperback.pbcolors</code>
+                  <br>
+                  Black Dark Mode version with a pitch-black dark mode background,
+                  optimized for OLED displays.
+                </li>
+
+                <li>
+                  BAM:
+                  <code>[Theme-Name]-BAM-Paperback.pbcolors</code>
+                  <br>
+                  Black All Modes version with a pitch-black background across
+                  both light and dark modes, optimized for OLED displays.
+                </li>
+              </ul>
+            </div>
+
+            <div class="theme">
+              <h2>Browse Themes</h2>
+
+              <p>
+                Open a folder below to download themes.
+              </p>
+
+              <ul id="themes"></ul>
+            </div>
+
+            <script>
+              fetch("./")
+                .catch(() => {});
+            </script>
+
+          </body>
+          </html>
+          EOF
+
+      - name: Deploy to gh_page
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: gh_page
+          publish_dir: ./site
