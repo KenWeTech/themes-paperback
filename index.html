@@ -195,7 +195,17 @@
             card.className = 'folder-card';
             card.innerHTML = `<h2>${folder}</h2><div class="pill-container"></div>`;
 
-            const itemsToRender = folderMatch ? items : matchingItems;
+            let itemsToRender = folderMatch ? items : matchingItems;
+            
+            itemsToRender.sort((a, b) => {
+              const getRank = (name) => {
+                if (name.includes('-BDM-')) return 1;
+                if (name.includes('-BAM-')) return 2;
+                return 0;
+              };
+              return getRank(a.filename) - getRank(b.filename);
+            });
+
             const pillContainer = card.querySelector('.pill-container');
 
             itemsToRender.forEach(item => {
