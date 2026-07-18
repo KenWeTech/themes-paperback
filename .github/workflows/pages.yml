@@ -33,7 +33,7 @@ jobs:
             split("\n")[:-1] | map({
               path: .,
               filename: (split("/") | last),
-              folder: (if contains("/") then (split("/") | .[:-1] | join("/")) else "Uncategorized" end)
+              folder: (if contains("/") then (split("/")[0]) else "Uncategorized" end)
             })
           ' > site/themes.json
 
