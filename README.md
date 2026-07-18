@@ -1,0 +1,41 @@
+
+# Paperback Themes Collection
+
+A collection of custom themes designed specifically for the [Paperback](https://paperback.moe/) iOS app. Featuring tailored versions for for each color option.
+
+## Repo Structure
+
+The themes are organized by color or color theme. Inside each main folder, you will find variants optimized for your viewing preference:
+
+-   **`[Color-or-Theme-Name]/`**  — The main folder containing the regular theme (e.g.,  `Winter_Solstice`,  `Red`,  `Light_Blue`).
+    
+    -   **`Black_Dark_Mode/`**  — BDM in the file name. Contains the version with the dark mode background set to pitch-black (ideal for OLED screens).
+        
+    -   **`Black_All_Modes/`**  — BAM in the file name. Contains the version with the background set to pitch-black across both light and dark mode (ideal for OLED screens).
+        
+
+## How to Apply Themes in Paperback
+
+Follow these steps to download, backup, and apply your chosen theme.
+
+**Download the Theme File:**
+Step 1.
+
+Navigate to the specific theme file you want in this repository and download it directly to your device's  **Files** app.
+
+**Prepare the App**
+Step 2.
+
+Open the  **Paperback**  app so it is running in the background. (Optional: If you want to save your current setup before changing it, go to your settings and export your current system theme now.)
+
+**Open via Files App:**
+Step 3.
+
+Open your device's  **Files**  app and locate the downloaded theme file. Either tap it to open, or  **long-press**  the file, select  **Share**, and choose  **Paperback**  from the app list.
+
+**Force Restart to Apply:**
+Step 4.
+
+Once Paperback automatically pulls into the foreground,  **fully close the app**  from your device's app switcher (swipe it away), then  **reopen it**. Your new theme will now be applied.
+
+> 💡  **Tip:**  If you are using a  **Black Dark Mode**  variant, ensure your system or app setting is forced to Dark Mode to experience the OLED pitch-black profile.
