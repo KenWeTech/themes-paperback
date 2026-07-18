@@ -21,7 +21,11 @@ Follow these steps to download, backup, and apply your chosen theme.
 Step 1 -
 **Download the Theme File:**
 
-Navigate to the specific theme file you want in this repository and download it directly to your device's  **Files** app.
+If on iOS device you can find themes from url below:
+
+[`https://KenWeTech.github.io/themes-paperback`](https://KenWeTech.github.io/themes-paperback)
+
+Navigate to the specific theme file you want and download it directly to your device's  **Files** app.
 
 Step 2 -
 **Prepare the App:**
