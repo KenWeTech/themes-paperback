@@ -18,23 +18,23 @@ The themes are organized by color or color theme. Inside each main folder, you w
 
 Follow these steps to download, backup, and apply your chosen theme.
 
+Step 1 -
 **Download the Theme File:**
-Step 1.
 
 Navigate to the specific theme file you want in this repository and download it directly to your device's  **Files** app.
 
-**Prepare the App**
-Step 2.
+Step 2 -
+**Prepare the App:**
 
 Open the  **Paperback**  app so it is running in the background. (Optional: If you want to save your current setup before changing it, go to your settings and export your current system theme now.)
 
+Step 3 -
 **Open via Files App:**
-Step 3.
 
 Open your device's  **Files**  app and locate the downloaded theme file. Either tap it to open, or  **long-press**  the file, select  **Share**, and choose  **Paperback**  from the app list.
 
+Step 4 -
 **Force Restart to Apply:**
-Step 4.
 
 Once Paperback automatically pulls into the foreground,  **fully close the app**  from your device's app switcher (swipe it away), then  **reopen it**. Your new theme will now be applied.
 
