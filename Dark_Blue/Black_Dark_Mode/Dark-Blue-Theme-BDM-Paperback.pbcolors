@@ -45,15 +45,15 @@
 	},
 	"foregroundColor": {
 		"lightColor": {
-			"red": 0.8,
-			"green": 0.83,
-			"blue": 0.88,
+			"red": 0.35,
+			"green": 0.62,
+			"blue": 0.92,
 			"alpha": 1
 		},
 		"darkColor": {
-			"red": 0.11,
-			"green": 0.13,
-			"blue": 0.16,
+			"red": 0.04,
+			"green": 0.09,
+			"blue": 0.18,
 			"alpha": 1
 		}
 	},
