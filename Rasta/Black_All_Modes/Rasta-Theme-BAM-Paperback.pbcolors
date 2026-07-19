@@ -31,15 +31,15 @@
 	},
 	"accentTextColor": {
 		"lightColor": {
-			"red": 0,
-			"green": 0.55,
-			"blue": 0.15,
-			"alpha": 1
-		},
-		"darkColor": {
 			"red": 1,
 			"green": 0.88,
 			"blue": 0.1,
+			"alpha": 1
+		},
+		"darkColor": {
+			"red": 0.05,
+			"green": 0.7,
+			"blue": 0.2,
 			"alpha": 1
 		}
 	},
@@ -185,29 +185,29 @@
 	},
 	"buttonNormalTextColor": {
 		"lightColor": {
-			"red": 1,
-			"green": 0.88,
-			"blue": 0.1,
+			"red": 0,
+			"green": 0.55,
+			"blue": 0.15,
 			"alpha": 1
 		},
 		"darkColor": {
-			"red": 0.05,
-			"green": 0.7,
-			"blue": 0.2,
+			"red": 1,
+			"green": 0.88,
+			"blue": 0.1,
 			"alpha": 1
 		}
 	},
 	"buttonNormalBorderColor": {
 		"lightColor": {
-			"red": 1,
-			"green": 0.88,
-			"blue": 0.1,
+			"red": 0,
+			"green": 0.55,
+			"blue": 0.15,
 			"alpha": 1
 		},
 		"darkColor": {
-			"red": 0.05,
-			"green": 0.7,
-			"blue": 0.2,
+			"red": 1,
+			"green": 0.88,
+			"blue": 0.1,
 			"alpha": 1
 		}
 	},
