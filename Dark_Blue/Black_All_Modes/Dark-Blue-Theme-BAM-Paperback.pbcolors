@@ -1,5 +1,5 @@
 {
-	"description": "Dark Blue theme with black dark mode for Paperback.",
+	"description": "Dark Blue theme with black for all modes for Paperback.",
 	"creator": "KenWeTech",
 	"accentColor": {
 		"lightColor": {
@@ -9,9 +9,9 @@
 			"alpha": 1
 		},
 		"darkColor": {
-			"red": 0.35,
-			"green": 0.62,
-			"blue": 0.92,
+			"red": 0.02,
+			"green": 0.18,
+			"blue": 0.38,
 			"alpha": 1
 		}
 	},
@@ -23,9 +23,9 @@
 			"alpha": 1
 		},
 		"darkColor": {
-			"red": 0.35,
-			"green": 0.62,
-			"blue": 0.92,
+			"red": 0.02,
+			"green": 0.18,
+			"blue": 0.38,
 			"alpha": 1
 		}
 	},
@@ -143,9 +143,9 @@
 	},
 	"bodyTextColor": {
 		"lightColor": {
-			"red": 0.04,
-			"green": 0.09,
-			"blue": 0.18,
+			"red": 0,
+			"green": 0.26,
+			"blue": 0.66,
 			"alpha": 1
 		},
 		"darkColor": {
@@ -177,9 +177,9 @@
 			"alpha": 0.3
 		},
 		"darkColor": {
-			"red": 0.35,
-			"green": 0.62,
-			"blue": 0.92,
+			"red": 0.02,
+			"green": 0.18,
+			"blue": 0.38,
 			"alpha": 0.3
 		}
 	},
@@ -247,9 +247,9 @@
 			"alpha": 1
 		},
 		"darkColor": {
-			"red": 0.35,
-			"green": 0.62,
-			"blue": 0.92,
+			"red": 0.02,
+			"green": 0.18,
+			"blue": 0.38,
 			"alpha": 1
 		}
 	}

@@ -1,5 +1,5 @@
 {
-	"description": "Orange theme with black dark mode for Paperback.",
+	"description": "Orange theme with black for all modes for Paperback.",
 	"creator": "KenWeTech",
 	"accentColor": {
 		"lightColor": {
@@ -143,9 +143,9 @@
 	},
 	"bodyTextColor": {
 		"lightColor": {
-			"red": 0.18,
-			"green": 0.11,
-			"blue": 0.06,
+			"red": 0.97,
+			"green": 0.61,
+			"blue": 0.31,
 			"alpha": 1
 		},
 		"darkColor": {
