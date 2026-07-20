@@ -1,7 +1,7 @@
 
 # Paperback Themes Collection
 
-A collection of custom themes designed specifically for the [Paperback](https://paperback.moe/) iOS app. Featuring tailored versions for for each color option.
+A collection of custom themes designed specifically for the [Paperback](https://paperback.moe/) (0.8) iOS app, not the beta (0.9). Featuring tailored versions for for each color option.
 
 ## Repo Structure
 
@@ -16,7 +16,7 @@ The themes are organized by color or color theme. Inside each main folder, you w
 
 ## How to Apply Themes in Paperback
 
-Follow these steps to download, backup, and apply your chosen theme.
+Follow these steps to download and apply your chosen theme.
 
 Step 1 -
 **Download the Theme File:**
@@ -30,7 +30,7 @@ Navigate to the specific theme file you want and download it directly to your de
 Step 2 -
 **Prepare the App:**
 
-Open the  **Paperback**  app so it is running in the background. (Optional: If you want to save your current setup before changing it, go to your settings and export your current system theme now.)
+Open the  **Paperback**  app so it is running in the background.
 
 Step 3 -
 **Open via Files App:**
@@ -43,3 +43,5 @@ Step 4 -
 Once Paperback automatically pulls into the foreground,  **fully close the app**  from your device's app switcher (swipe it away), then  **reopen it**. Your new theme will now be applied.
 
 > 💡  **Tip:**  If you are using a  **Black Dark Mode**  variant, ensure your system or app setting is forced to Dark Mode to experience the OLED pitch-black profile.
+
+### My fork of the Kavita extension for Paperback (0.8) is available here: [`https://github.com/KenWeTech/kavya-paperback`](https://github.com/KenWeTech/kayva-paperback)
